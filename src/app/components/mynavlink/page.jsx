@@ -10,7 +10,7 @@ const MynavLink = ({href,children}) => {
 
     return (
         
-    <Link  href={href} className={`px-3 py-2 rounded-lg flex items-center gap-2 transition
+    <Link  href={href} className={`lg:px-3 px-2   py-3 rounded-lg flex items-center lg:gap-2 md:gap-2 sm:gap-0.5 transition
     ${isActive ? "bg-[#244D3F] text-white" : "hover:bg-gray-200"}`}>
         {children}
         </Link>

@@ -30,10 +30,10 @@ const items = [
   <div className="flex-1">
     <p className='text-2xl font-bold'>Keen<span className='text-[#244D3F]'>Keeper</span></p>
   </div>
-<div className='flex space-x-3'>
+<div className='flex lg:space-x-3 md:space-x-3'>
 {
     items.map((item)=> (<MynavLink key={item.path} href={item.path}>
-        <span className='flex text-[16px] items-center gap-2'>{item.icon} {item.text}</span>
+        <span className='flex text-[16px] items-center gap-0.5 lg:gap-2 md:gap-2'>{item.icon} {item.text}</span>
         </MynavLink>))
 }
 </div>
