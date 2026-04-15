@@ -8,7 +8,7 @@ const HeroSection = () => {
     <div>
       <h1 className="text-5xl font-bold">Friends to keep close in your life</h1>
       <p className="py-6">
-        Your personal shelf of meaningful connections. Browse, tend, and nurture the
+        Your personal shelf of meaningful connections. Browse, tend, and nurture the <br />
 relationships that matter most.
       </p>
       <button className="btn bg-[#244D3F] text-white"><span className='text-xl'><IoIosAdd /></span>Add a Friend</button>

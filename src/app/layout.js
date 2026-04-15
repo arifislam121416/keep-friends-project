@@ -3,6 +3,8 @@ import "./globals.css";
 import MynavLink from "./components/mynavlink/page";
 import Navbar from "./components/navbar/page";
 import Footer from "./components/footer/page";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
        <Navbar/>
-        {children}
+          {children}
         <Footer/>
         </body>
     </html>

@@ -18,7 +18,7 @@ const items = [
         icon:<IoMdTime />
     },
     {
-        path:"/stats",
+        path:"/Stats",
         text:"Stats",
         icon:<FaChartBar />
     },
