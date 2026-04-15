@@ -1,6 +1,8 @@
 import React from 'react';
 import MynavLink from '../mynavlink/page';
 import { IoMdHome } from "react-icons/io";
+import { IoMdTime } from "react-icons/io";
+import { FaChartBar } from "react-icons/fa";
 
 const Navbar = () => {
 
@@ -8,14 +10,17 @@ const items = [
     {
         path:"/",
         text:"Home",
+        icon:<IoMdHome />
     },
  {
         path:"/timeline",
         text:"Timeline",
+        icon:<IoMdTime />
     },
     {
         path:"/stats",
         text:"Stats",
+        icon:<FaChartBar />
     },
    
 ]
@@ -23,11 +28,13 @@ const items = [
     return (
        <div className="navbar bg-base-100 shadow-sm">
   <div className="flex-1">
-    <p className='text-4xl font-bold'>Keen<span className='text-[#244D3F]'>Keeper</span></p>
+    <p className='text-2xl font-bold'>Keen<span className='text-[#244D3F]'>Keeper</span></p>
   </div>
-<div className='space-x-3'>
+<div className='flex space-x-3'>
 {
-    items.map((item)=> (<MynavLink key={item.path} href={item.path}>{item.text}</MynavLink>))
+    items.map((item)=> (<MynavLink key={item.path} href={item.path}>
+        <span className='flex text-[16px] items-center gap-2'>{item.icon} {item.text}</span>
+        </MynavLink>))
 }
 </div>
 </div>
