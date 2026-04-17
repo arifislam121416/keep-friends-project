@@ -1,14 +1,14 @@
 
-import Friends from "./apps/friends/page";
+
 import HeroSection from "./components/herosection/page";
-import TottalFriendAdd from "./components/tottalfriendadd/page";
+import Friend from "./friends/page";
+
 
 export default function Home() {
   return (
     <div>
       <HeroSection/>
-     <TottalFriendAdd/>
-     <Friends/>
+     <Friend/>
     </div>
   );
 }

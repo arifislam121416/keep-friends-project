@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 const Timeline = () => {
     return (
         <div>
-            This is a time line
+time line show
         </div>
     );
 };

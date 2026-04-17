@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Stats = () => {
+const HooksPage = () => {
     return (
         <div>
-             this is a stats
+            
         </div>
     );
 };
 
-export default Stats;
+export default HooksPage;

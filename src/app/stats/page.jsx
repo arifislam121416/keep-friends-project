@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Apps = () => {
+const Stats = () => {
     return (
         <div>
-          
+            Stats
         </div>
     );
 };
 
-export default Apps;
+export default Stats;

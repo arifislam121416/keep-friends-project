@@ -1,4 +1,4 @@
-import React from 'react';
+
 import MynavLink from '../mynavlink/page';
 import { IoMdHome } from "react-icons/io";
 import { IoMdTime } from "react-icons/io";
@@ -10,19 +10,20 @@ const items = [
     {
         path:"/",
         text:"Home",
+        loader:"/id",
         icon:<IoMdHome />
     },
- {
+    {
         path:"/timeline",
         text:"Timeline",
-        icon:<IoMdTime />
+      icon:<IoMdTime />
     },
     {
-        path:"/Stats",
+        path:"/stats",
         text:"Stats",
         icon:<FaChartBar />
-    },
-   
+    }
+    
 ]
 
     return (

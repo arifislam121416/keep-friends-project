@@ -1,6 +1,9 @@
-"use client";
+
 
 import Image from "next/image";
+import Link from "next/link";
+
+
 
 const GetFriends = ({Friend}) => {
     const getStatus = (Friend) => {
@@ -12,8 +15,12 @@ const GetFriends = ({Friend}) => {
   return "on-track";
 };
  const status = getStatus(Friend);
+
+
     return (
-        <div className="text-center w-65 rounded-2xl mt-2 shadow-[#00000014] space-y-3 p-6 bg-[#ffffffFF] ">
+    <Link href={`/friends/${Friend.id}`}>
+
+<div className="text-center w-65 rounded-2xl mt-2 shadow-[#00000014] space-y-3 p-6 bg-[#ffffffFF] ">
             
 <Image className="rounded-full mx-auto" src={Friend.picture} width={80} height={80} alt="Friends Picture"/>
             <h1 className="text-xl font-semibold">{Friend.name}</h1>
@@ -44,7 +51,12 @@ const GetFriends = ({Friend}) => {
       </p>
 
       <p>Next Contact: {Friend.next_due_date}</p>
+
+      
         </div>
+    </Link>
+        
+        
     );
 };
 
