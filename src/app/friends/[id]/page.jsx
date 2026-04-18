@@ -1,4 +1,4 @@
-// 
+
 import Friends from "@/friends.json";
 import Image from "next/image";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
@@ -7,11 +7,13 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import { MdOutlineTextsms } from "react-icons/md";
 import { BiPhoneCall } from "react-icons/bi";
 import { MdOutlineVideocam } from "react-icons/md";
+import ClickBtn from "@/app/components/ClickBtn";
 
 
 
 
 export default async function FriendsDetails({ params }) {
+
   const { id } = await params;
 
   const friend = Friends.find(
@@ -105,23 +107,31 @@ export default async function FriendsDetails({ params }) {
    <button className="btn">Edit</button>
   </div>
  
- <div className=" w-full rounded-2xl   mt-2 shadow p-6 bg-[#ffffffFF]">
-  <h1 className="text-2xl font-medium my-2">Quick Check-In</h1>
+ <div className=" mt-4 w-full rounded-2xl shadow p-6 bg-[#ffffffFF]">
+
+ <h1 className="text-2xl font-semibold text-left mb-4">Quick Check-In</h1>
 
   <div className="flex text-center justify-between">
+
 <div className="bg-[#f8fafcFF] w-54 text-center font-semibold  p-8 rounded-2xl">
   <p><BiPhoneCall className="mx-auto text-3xl" /></p>
-  <p>Call</p>
+
+<ClickBtn id={friend.id} type="call">Call</ClickBtn>
+
 </div>
 
 <div className="bg-[#f8fafcFF] w-54 text-center font-semibold  p-8 rounded-2xl">
   <p><MdOutlineTextsms className="mx-auto text-3xl" /></p>
-  <p>Text</p>
+ <ClickBtn id={friend.id} type="text">Text</ClickBtn>
 </div>
 
 <div className="bg-[#f8fafcFF] w-54 text-center font-semibold  p-8 rounded-2xl">
-  <p><MdOutlineVideocam className="mx-auto text-3xl" /></p>
-  <p>Video</p>
+<p><MdOutlineVideocam className="mx-auto text-3xl" /></p>
+  
+ 
+ <ClickBtn id={friend.id} type="video">Video</ClickBtn>
+  
+
 </div>
 
 
