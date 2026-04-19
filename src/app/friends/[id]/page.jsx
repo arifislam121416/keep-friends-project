@@ -100,19 +100,19 @@ export default async function FriendsDetails({ params }) {
    
   </div>
 
-  <div className="flex text-center w-full rounded-2xl   mt-2 shadow p-6 bg-[#ffffffFF]  justify-between"> 
+  <div className="flex md:flex md:justify-between gap-4  text-center w-full rounded-2xl   mt-2 shadow p-6 bg-[#ffffffFF]"> 
    <div>
     <p>Relationship Goal</p>
     <p>Connect every <span className="text-xl font-semibold">{friend.days_since_contact} days</span></p>
    </div>
-   <button className="btn">Edit</button>
+   <button className="btn w-15">Edit</button>
   </div>
  
  <div className=" mt-4 w-full rounded-2xl shadow p-6 bg-[#ffffffFF]">
 
  <h1 className="text-2xl font-semibold text-left mb-4">Quick Check-In</h1>
 
-  <div className="flex text-center justify-between">
+  <div className="grid lg:grid-cols-3 md:grid-cols-2  space-y-4 text-center justify-between">
 
 <div className="bg-[#f8fafcFF] w-54 text-center font-semibold  p-8 rounded-2xl">
   <p><BiPhoneCall className="mx-auto text-3xl" /></p>
