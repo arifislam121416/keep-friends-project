@@ -1,7 +1,7 @@
 
 
-import HeroSection from "./components/herosection/page";
-import Friend from "./friends/page";
+import HeroSection from "./components/herosection/HeroSection";
+import Friend from "./friends/Friends";
 
 
 export default function Home() {

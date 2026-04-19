@@ -1,7 +1,7 @@
 
 import Friends from "@/friends.json"
-import GetFriends from '@/app/components/getfriends/page';
-import TottalFriendAdd from '@/app/components/tottalfriendadd/page';
+import GetFriends from '@/app/components/getfriends/GetFriend';
+import TottalFriendAdd from '@/app/components/tottalfriendadd/TottalFriendAdd';
 
 
 

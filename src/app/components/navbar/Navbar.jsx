@@ -1,5 +1,5 @@
 
-import MynavLink from '../mynavlink/page';
+import MynavLink from '../mynavlink/MynvLink';
 import { IoMdHome } from "react-icons/io";
 import { IoMdTime } from "react-icons/io";
 import { FaChartBar } from "react-icons/fa";

@@ -1,7 +1,9 @@
 
 
 const TottalFriendAdd = ({Friends}) => {
+
    const getStatus =(friend)=>{
+      
       const today = new Date();
       const dueDate = new Date(friend.next_due_date);
       if(today > dueDate ) return "overdue";
@@ -22,7 +24,7 @@ const TottalFriendAdd = ({Friends}) => {
     );
   }).length;
     return (
-        <div className='grid text-center bg-[#F8FAFC]  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+        <div className='grid text-center bg-[#F8FAFC]  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
           <div className="card bg-base-100 p-6 gap-4 card-xs shadow-sm">
   
    <p className='text-[32px] font-semibold'>{totalFriends}</p>
