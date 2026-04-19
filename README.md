@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📊 Event Timeline Tracker App
 
-## Getting Started
+A modern **Next.js + React** based event tracking application that allows users to track their interactions (Text, Call, Video) in a clean timeline format with real-time statistics visualization.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project helps users organize and visualize their daily communication activities.  
+It includes a dynamic timeline and a statistics dashboard that updates based on user events.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Technologies Used
 
-## Learn More
+- ⚡ Next.js (App Router)
+- ⚛️ React.js
+- 🎨 Tailwind CSS
+- 📊 Recharts (Data Visualization)
+- 🧠 Context API (State Management)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. 📅 Dynamic Timeline
+- Displays all user events in chronological order
+- Supports event types: **Text, Call, Video**
+- Shows user avatar, name, and timestamp
 
-## Deploy on Vercel
+### 2. 🔍 Filter System
+- Filter timeline by event type
+- Options: All / Text / Call / Video
+- Real-time UI update without reload
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. 📊 Interactive Statistics Dashboard
+- Pie chart visualization of event distribution
+- Dynamic data based on timeline events
+- Hover tooltips and legend support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+👨‍💻 Author
+
+Developed by AL AMIN
+Passionate about full-stack web development 🚀
+
+⭐ Show Your Support
+
+If you like this project, please give it a ⭐ on GitHub!
