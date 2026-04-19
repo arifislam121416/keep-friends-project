@@ -12,9 +12,10 @@ import ClickBtn from "@/app/components/ClickBtn";
 
 
 
+
 export default async function FriendsDetails({ params }) {
 
-  const { id } = await params;
+  const {id }= await params;
 
   const friend = Friends.find(
     (f) => String(f.id) === String(id)
@@ -115,21 +116,26 @@ export default async function FriendsDetails({ params }) {
 
 <div className="bg-[#f8fafcFF] w-54 text-center font-semibold  p-8 rounded-2xl">
   <p><BiPhoneCall className="mx-auto text-3xl" /></p>
-
-<ClickBtn id={friend.id} type="call">Call</ClickBtn>
+ <ClickBtn friendId={friend.id} name={friend.name} picture={friend.picture} type="call">
+  Call
+</ClickBtn>
 
 </div>
 
 <div className="bg-[#f8fafcFF] w-54 text-center font-semibold  p-8 rounded-2xl">
   <p><MdOutlineTextsms className="mx-auto text-3xl" /></p>
- <ClickBtn id={friend.id} type="text">Text</ClickBtn>
+<ClickBtn friendId={friend.id} name={friend.name} picture={friend.picture} type="text">
+  Text
+</ClickBtn>
+
 </div>
 
 <div className="bg-[#f8fafcFF] w-54 text-center font-semibold  p-8 rounded-2xl">
 <p><MdOutlineVideocam className="mx-auto text-3xl" /></p>
   
- 
- <ClickBtn id={friend.id} type="video">Video</ClickBtn>
+<ClickBtn friendId={friend.id} name={friend.name} picture={friend.picture} type="video">
+  Video
+</ClickBtn>
   
 
 </div>

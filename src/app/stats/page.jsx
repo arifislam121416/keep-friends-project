@@ -1,11 +1,12 @@
-import React from 'react';
+import Friends from "@/friends.json";
+import Stats from "./Stats";
 
-const Stats = () => {
-    return (
-        <div>
-            Stats
-        </div>
-    );
-};
 
-export default Stats;
+export default function Page() {
+    
+  return (
+
+  <Stats friends={Friends}/>
+
+  );
+}

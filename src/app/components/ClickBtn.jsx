@@ -1,18 +1,20 @@
 "use client";
 
+import { toast } from "react-toastify";
 import { useAppContext } from "../AppContext";
 
-const ClickBtn = ({ id, type, children }) => {
-  const { addEvent } = useAppContext(); 
-
+const ClickBtn = ({ type, name, picture, friendId, children }) => {
+  const { addEvent } = useAppContext();
+ 
   const handleClick = () => {
     addEvent({
-      friendId: id,
+      friendId,
       type,
-      date: new Date(),
+      name,
+      picture,
+      date: new Date().toISOString(),
     });
-
-    console.log("Added:", id, type);
+    toast.success("Added to timeline!");
   };
 
   return (
